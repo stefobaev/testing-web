@@ -20,12 +20,12 @@ variable "aws_account" {
 
 variable "env" {
   type    = string
-  default = "main"
+  default = "stage"
 }
 
 variable "app" {
   type    = string
-  default = "web"
+  default = "app"
 }
 
 variable "name_container" {

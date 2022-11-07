@@ -1,5 +1,5 @@
-env            = "main"
-app            = "web"
+env            = "stage"
+app            = "app"
 name_container = "nginx"
 aws_profile    = "baev"
 aws_account    = "089370973671"
