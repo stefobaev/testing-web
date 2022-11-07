@@ -49,17 +49,17 @@ variable "github_oauth_token" {
 
 variable "repo_url" {
   type    = string
-  default = ""
+  default = "https://github.com/stefobaev/web.git"
 }
 
 variable "branch_pattern" {
   type    = string
-  default = ""
+  default = "main"
 }
 
 variable "git_trigger_event" {
   type    = string
-  default = ""
+  default = "PUSH"
 }
 
 variable "app_count" {
