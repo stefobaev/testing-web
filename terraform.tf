@@ -1,20 +1,16 @@
-# provider "aws" {
-#   region  = var.aws_region
-#   profile = var.aws_profile
-# }
+terraform {
+    required_providers {
+        aws = {
+            source = "hashicorp/aws"
+            version = "~> 3.35"
+        }
+    }
 
-# terraform {
 
-#   backend "s3" {
-#     encrypt = true
-#     bucket  = "nginx-stage-us-east-2"
-#     region  = "us-east-2"
-#     key     = "state"
-#   }
-
-#   required_providers {
-#     aws = {
-#       version = "~> 3.35"
-#     }
-#   }
-# }
+    backend "s3" {
+        encrypt = true
+        bucket  = "nginx-stage-eu-central-1"
+        region  = "eu-central-1"
+        key     = "state"
+    }
+}

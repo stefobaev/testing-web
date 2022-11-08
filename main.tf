@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.aws_region
+}
 
 module "s3_terraform_state" {
   source      = "./modules/s3"
