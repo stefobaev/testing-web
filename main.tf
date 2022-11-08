@@ -50,7 +50,7 @@ module "init-build" {
   remote_state_bucket = var.bucket_name
   env                 = var.env
   app                 = var.app
-  working_dir         = path.root
+  working_dir         = "${path.root}/app"
   image_tag           = var.image_tag
 }
 
