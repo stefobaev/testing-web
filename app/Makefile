@@ -9,7 +9,7 @@ REPO_NAME = $(REGISTRY_ID).dkr.ecr.$(REPOSITORY_REGION).amazonaws.com/${APP_NAME
 .PHONY: build
 build:
 	$(MAKE) docker-login
-	docker build -t $(REPO_NAME):$(TAG) ./web/.
+	docker build -t $(REPO_NAME):$(TAG) .
 	docker push $(REPO_NAME):$(TAG)
 
 .PHONY: docker-login
