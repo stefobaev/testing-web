@@ -18,7 +18,7 @@ variable "app" {
 
 variable "aws_region" {
   description = "The AWS region for the project"
-  default     = "us-east-2"
+  default     = "eu-central-1"
 }
 
 variable "aws_profile" {
